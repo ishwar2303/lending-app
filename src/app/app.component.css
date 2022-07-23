@@ -1,0 +1,98 @@
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    background: rgb(4, 84, 150);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    margin: 10px 0px;
+}
+
+.footer {
+    height: 45px;
+    background: rgb(31, 31, 31);
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    width: 300px;
+    background: white;
+    margin-right: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content {
+    width: 500px;
+    background: white;
+    flex: 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.logo {
+    margin: 0px 10px;
+}
+.menu {
+    margin: 0px 10px
+}
+.logout-btn {
+    padding: 10px;
+}
+.logout-btn:hover {
+    background: red;
+    border-radius: 7px;
+}
+.navigation {
+    overflow: scroll;
+}
+.navigation nav {
+    height: px;
+}
+.navigation ul {
+    padding: 10px 0px;
+}
+.navigation ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    background: rgb(95, 95, 251, 0.2);
+}
+
+.active {
+    background: rgb(95, 95, 251);
+    color: white;
+}
+
+.navigation ul li .active:hover {
+    background: rgb(95, 95, 251);
+    color: white;
+}
+
+.menu a, .menu label {
+    display: flex;
+    align-items: center;
+}

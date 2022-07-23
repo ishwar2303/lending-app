@@ -1,0 +1,59 @@
+<div class="dialog-center">
+    <div>
+        <div class="dialog-header">
+            <h1>New Borrower</h1>
+            <div>
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24" (click)="hideNewBorrowerDialog()">
+                    <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                </svg>
+            </div>
+        </div>
+        <form class="example-form">
+
+            <div class="form-row">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>First name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Rate of Interest %</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Amount ₹</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Choose a date</mat-label>
+                          <!-- #docregion toggle -->
+                            <input matInput [matDatepicker]="picker">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          <!-- #enddocregion toggle -->
+                          </mat-form-field>
+                </div>
+            </div>
+
+        </form>
+        <p>Some message</p>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<body-header 
+    [item]="title"
+>
+<div>
+    <button mat-button color="primary" (click)="showNewBorrowerDialog()">Add</button>
+    <button mat-button color="accent">Edit</button>
+    <button mat-button color="warn">Delete</button>
+</div>
+</body-header>
+
+
+<new-borrower 
+    *ngIf="newBorrowerDialogState"
+    [hideNewBorrowerDialog]="hideNewBorrowerDialog"
+></new-borrower>
+
+<div *ngIf="newBorrowerDialogState" class="overlay"></div>
